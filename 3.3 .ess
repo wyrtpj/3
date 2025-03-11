@@ -1,0 +1,26 @@
+start
+new ab number
+set ab 7
+log string "Время от А до B = " >> ab 
+new bc number 
+set bc 25
+log string "Время от B до C пешком = " >> bc 
+new bc2 number ?путь bc на автобусе
+set bc2 8
+log string "Время от B до C на автобусе = " >> bc2 
+new cd number
+set cd 5
+log string "Время от С до D = " >> cd 
+new pesh number
+set pesh ab+bc+cd
+new avto number
+set avto ab+bc2+10+cd ?10 минут ждали автобус
+log string "Путь домой полностью пешком =" >> pesh >> "минут."
+log string "Путь домой с отрезком BC пешком =" >> avto >> "минут."
+     if (pesh>avto)
+        log string "На автобусе будет быстрее"
+     close
+     if (avto>pesh)
+        log string "Пешком дойти быстрее"
+     close
+finish
