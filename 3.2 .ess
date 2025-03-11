@@ -1,0 +1,14 @@
+start
+new money number
+set money 500
+log string "У нас есть" >> money >> "рублей."
+new thing number
+set thing 478
+log string "Товар стоит" >> thing >> "рублей."
+    if (money>thing)
+       log string "Да, денег хватает на покупку товара."
+    close
+    if (thing>money)
+       log string "Нет, денег не хватает на покупку товара."
+    close
+finish
