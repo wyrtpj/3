@@ -1,0 +1,12 @@
+start
+new age number
+set age 17
+new adult number
+set adult 18
+    if (adult>age)
+        log string "Человек не может купить алкоголь"
+    close
+    if (age>adult)
+        log string "Человек может купить алкоголь"
+    close
+finish
